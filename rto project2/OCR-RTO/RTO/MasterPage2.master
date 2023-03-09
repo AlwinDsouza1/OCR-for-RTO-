@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+  <title>RTO project</title>
+   <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+  <meta name="description" content="free website template" />
+  <meta name="keywords" content="enter your keywords here" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/image_slide.js"></script>
+</head>
+
+<body>
+ <form id="form1" runat="server">
+  <div id="main">
+    <div id="header">
+	  <div id="banner">
+	    <div id="welcome">
+	      <h1>RTO Services</h1>
+	    </div><!--close welcome-->
+	    <div id="welcome_slogan">
+	      <h1>Regional Transport Office</h1>
+	    </div><!--close welcome_slogan-->
+	  </div><!--close banner-->
+    </div><!--close header-->
+
+	<div id="menu_container">
+	  <div id="menubar">
+        <ul id="menu">
+            
+          <li class="current"><a href="usercreation.aspx">User Creation</a></li>
+          <li><a href="locationmanager.aspx">Location Manager</a></li>
+          <li><a href="policemaster.aspx">Police Master</a></li>
+          <li><a href="login.aspx">logout</a></li>
+          
+        </ul>
+      </div><!--close menubar-->	
+	</div><!--close menu_container-->	
+    
+	<div id="site_content">		
+
+	  <div class="sidebar_container">       
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2>
+                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" 
+                    onclick="LinkButton1_Click">View feedback</asp:LinkButton>
+              </h2>
+        
+              
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->     		
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2></h2>
+            <h3></h3>
+            <p></p>         
+		  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h3></h3>
+            <p></p>         
+		  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->  
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h3></h3>
+            <p></p>         
+		  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->  		
+        <div class="sidebar">
+          <div class="sidebar_item">
+            <h2>&nbsp;</h2>
+            <p></p>
+            <p> </p>
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->
+       </div><!--close sidebar_container-->	
+	
+      <ul class="slideshow">
+        <li class="show"><img width="680" height="350" src="images/3.jpg" alt="&quot;Online Quick RTO Services&quot;" /></li>
+        <li><img width="680" height="350" src="images/1.jpg" alt="&quot;Prevent Pollution&quot;" /></li>
+      </ul>   	 
+	 
+	  <div id="content">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div class="content_item">
+		 
+		</div><!--close content_item-->
+      </div><!--close content-->   
+	</div><!--close site_content--> 
+    
+	<div id="content_grey">
+	   <div class="content_grey_container_box">
+		<h4>Latest Blog Post</h4>
+	    <p> Speed Limiting devices will be fitted  in the vehicle,by manufacturers from the date 15th  of April, 2017</p>
+		
+	  </div><!--close content_grey_container_box-->
+      <div class="content_grey_container_box">
+       <h4>Latest News</h4>
+	    <p> Government order : Jurisdiction of heavy vehicle drivers training institute 
+            is held atTown Hall near DC office on 24-4-2017</p>
+	   
+	  </div><!--close content_grey_container_box-->
+      <div class="content_grey_container_boxl">
+		<h4>Latest Rules</h4>
+	     <p>Helmet Compulsory for Pilion Rider.
+           HELMET Is Complusory for Two Wheeler  and SEAT BELT is Compulsory for Four Wheelers</p>
+	    
+	  </div><!--close content_grey_container_box1-->      
+	  <br style="clear:both"/>
+    </div><!--close content_grey-->   
+ 
+  </div><!--close main-->
+  
+  <div id="footer_container">
+    <div id="footer">
+	  <p>Designed By Kavyashree</p>
+    </div><!--close footer-->  
+  </div><!--close footer_container-->  
+  </form>
+</body>
+</html>

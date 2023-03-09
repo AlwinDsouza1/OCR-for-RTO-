@@ -1,0 +1,17 @@
+<html>
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'images/' %}" type="text/css">
+    <title>OCR</title>
+  
+  </head>
+  
+  <body>
+    <center><img src="{% static 'image.png' %}"> <br/><br/><br/><br/>
+    <h1>Text Extracted:</h1>
+    <div style="padding: 0px 100px 0 100px"><p style="background-color: rgb(203, 255, 255);">{{text}}</p><br/><br/></div>
+
+    <h1><a style="background-color: rgb(43, 156, 190); color: cornsilk;" href="{{link}}">SUBMIT</a></h1>
+  </center>
+  </body>
+</html>

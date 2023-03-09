@@ -1,0 +1,16 @@
+<html>
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'images/' %}" type="text/css">
+    <title>OCR</title>
+  
+  </head>
+  
+  <body>
+    <center><img src="{% static 'image.png' %}"> <br/><br/><br/><br/>
+    <h2>Image you selected:</h2>
+    <img src="{% static '1.png' %}" height="500" width="500"><br/><br/>
+    <button style="font-size:x-large; width: 130px; height:60px; background-color: blue; color: cornsilk;" onclick="location.href='{% url 'extract' %}'"> EXTRACT </button>
+  </center>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage4.master.cs" Inherits="MasterPage4" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+  <title>RTO project</title>
+   <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+  <meta name="description" content="free website template" />
+  <meta name="keywords" content="enter your keywords here" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/image_slide.js"></script>
+</head>
+
+<body>
+ <form id="form1" runat="server">
+  <div id="main">
+    <div id="header">
+	  <div id="banner">
+	    <div id="welcome">
+	      <h1>RTO Services</h1>
+	    </div><!--close welcome-->
+	    <div id="welcome_slogan">
+	      <h1>Regional Transport Office</h1>
+	    </div><!--close welcome_slogan-->
+	  </div><!--close banner-->
+    </div><!--close header-->
+
+	<div id="menu_container">
+	  <div id="menubar">
+        <ul id="menu">
+        
+          <li class="current"><a href="license.aspx">Application License form </a></li>
+          <li><a href="issuelicense.aspx">Issue License</a></li>
+           <li><a href="application.aspx">Application Status</a></li>
+         <li><a href="login.aspx">Logout</a></li>
+        </ul> <!--Search(vehicleno),application status,view Test passed list-->
+      </div><!--close menubar-->	
+	</div><!--close menu_container-->	
+    
+	<div id="site_content">		
+
+	  <div class="sidebar_container">       
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2>
+                <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click" 
+                    CausesValidation="False">View Vehicle Registration</asp:LinkButton>
+              </h2>
+            <h2>
+                <asp:LinkButton ID="LinkButton4" runat="server" onclick="LinkButton4_Click" 
+                    CausesValidation="False">Search Vehicle </asp:LinkButton>
+                <h2>
+                    <asp:LinkButton ID="LinkButton7" runat="server" CausesValidation="False" 
+                        onclick="LinkButton7_Click">View Ceased Vehicle</asp:LinkButton>
+              </h2>
+              
+              
+            <h2> <asp:LinkButton ID="LinkButton6" runat="server" onclick="LinkButton6_Click" 
+                    CausesValidation="False">Cancel Application</asp:LinkButton></h2>
+                  
+              <h2>
+              <asp:LinkButton ID="LinkButton10" runat="server" onclick="LinkButton10_Click">Emission Test Due</asp:LinkButton></h2>
+          
+          <h2><asp:LinkButton ID="LinkButton11" runat="server" onclick="LinkButton11_Click" 
+                    CausesValidation="False">  Feedback</asp:LinkButton>
+  
+  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->     		
+		<div class="sidebar">
+          <div class="sidebar_item">
+            
+            
+           
+                
+                    
+		      
+            
+            
+           
+              
+            
+            
+           
+                
+                    
+		      
+            
+            
+           
+              
+                    
+		  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h3></h3>
+            <p></p>         
+		  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->  
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h3></h3>
+            <p></p>         
+		  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->  		
+        <div class="sidebar">
+          <div class="sidebar_item">
+            <p></p>
+            <p></a></p>
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->
+       </div><!--close sidebar_container-->	
+	
+      <ul class="slideshow">
+        <li class="show"><img width="680" height="350" src="images/3.jpg" alt="&quot;Online Quick RTO Services&quot;" /></li>
+        <li><img width="680" height="350" src="images/1.jpg" alt="&quot;Prevent Pollution&quot;" /></li>
+      </ul>   	 
+	 
+	  <div id="content">
+       <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div class="content_item">
+		  
+		</div><!--close content_item-->
+      </div><!--close content-->   
+	</div><!--close site_content--> 
+    
+	  <!--close content_grey-->   
+ 
+  </div><!--close main-->
+  
+  <!--close footer_container-->  
+  </form>
+</body>
+</html>

@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage8.master.cs" Inherits="MasterPage8" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+  <title>RTO project</title>
+   <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+  <meta name="description" content="free website template" />
+  <meta name="keywords" content="enter your keywords here" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/image_slide.js"></script>
+</head>
+
+<body>
+ <form id="form1" runat="server">
+  <div id="main">
+    <div id="header">
+	  <div id="banner">
+	    <div id="welcome">
+	      <h1>RTO Services</h1>
+	    </div><!--close welcome-->
+	    <div id="welcome_slogan">
+	      <h1>Regional Transport Office</h1>
+	    </div><!--close welcome_slogan-->
+	  </div><!--close banner-->
+    </div><!--close header-->
+
+	<div id="menu_container">
+	  <div id="menubar">
+        <ul id="menu">
+          <li><a href="trafficregi.aspx">View Vehicle</a></li>
+          <li><a href="searchvehicletraffic.aspx">Search Vehicle</a></li>
+          <li><a href="viewtrafficdriving.aspx">View Driving License</a></li>
+        <li><a href="login.aspx">Logout</a></li>
+        </ul> <!--Search(vehicleno),application status,view Test passed list-->
+      </div><!--close menubar-->	
+	</div><!--close menu_container-->	
+    
+	<div id="site_content">		
+
+	  <div class="sidebar_container">       
+		<div class="sidebar">
+          <div class="sidebar_item">
+            
+               
+                <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click"><h2>Vehicle Emission Test due</h2> </asp:LinkButton>
+               
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->     		
+		<div class="sidebar">
+          <div class="sidebar_item">
+            
+            
+           
+                
+                    
+		  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h3></h3>
+            <p></p>         
+		  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->  
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h3></h3>
+            <p></p>         
+		  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->  		
+        <div class="sidebar">
+          <div class="sidebar_item">
+            <h2>&nbsp;</h2>
+            <p></p>
+            <p></p>
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->
+       </div><!--close sidebar_container-->	
+	
+      <ul class="slideshow">
+        <li class="show"><img width="680" height="350" src="images/3.jpg" alt="&quot;Online Quick RTO Services&quot;" /></li>
+        <li><img width="680" height="350" src="images/1.jpg" alt="&quot;Prevent Pollution&quot;" /></li>
+      </ul>   	 
+	 
+	  <div id="content">
+       <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div class="content_item">
+		  
+		</div><!--close content_item-->
+      </div><!--close content-->   
+	</div><!--close site_content--> 
+    
+	
+  </div><!--close main-->
+  
+  </form>
+</body>
+</html>
